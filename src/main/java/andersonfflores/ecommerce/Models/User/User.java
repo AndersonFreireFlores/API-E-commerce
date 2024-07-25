@@ -1,5 +1,6 @@
 package andersonfflores.ecommerce.Models.User;
 
+import andersonfflores.ecommerce.Models.User.Enum.UserRole;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -19,12 +20,12 @@ public class User {
 
     private String password;
 
-    private UserRole role;
+    private int role;
 
     public User() {
     }
 
-    public User(UUID id, String name, String email, String address, String password, UserRole role) {
+    public User(UUID id, String name, String email, String address, String password, int role) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -33,7 +34,7 @@ public class User {
         this.role = role;
     }
 
-    public User(String name, String email, String address, String password, UserRole role) {
+    public User(String name, String email, String address, String password, int role) {
         this.name = name;
         this.email = email;
         this.address = address;
@@ -81,11 +82,11 @@ public class User {
         this.password = password;
     }
 
-    public UserRole getRole() {
+    public int getRole() {
         return role;
     }
 
-    public void setRole(UserRole role) {
+    public void setRole(int role) {
         this.role = role;
     }
 }
