@@ -16,21 +16,26 @@ public class Product {
 
     private String description;
 
+    private String img_Url;
+
     private BigDecimal price;
 
     public Product() {
     }
 
-    public Product(UUID id, String name, String description, BigDecimal price) {
+
+    public Product(UUID id, String name, String description, String img_Url, BigDecimal price) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.img_Url = img_Url;
         this.price = price;
     }
 
-    public Product(String name, String description, BigDecimal price) {
+    public Product(String name, String description, String img_Url, BigDecimal price) {
         this.name = name;
         this.description = description;
+        this.img_Url = img_Url;
         this.price = price;
     }
 

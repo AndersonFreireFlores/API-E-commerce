@@ -1,6 +1,5 @@
 package andersonfflores.ecommerce.Models.User;
 
-import andersonfflores.ecommerce.Models.User.Enum.UserRole;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
